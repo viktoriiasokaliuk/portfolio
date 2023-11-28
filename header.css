@@ -1,0 +1,116 @@
+header {
+  background-color: #837b79;
+  max-width: 100vw;
+  height: 85vh;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+  /* justify-content: space-around; */
+  /* flex: 1 0 50%; */
+}
+
+.head-cont-1 {
+}
+.head-cont-2 {
+}
+.head-cont-3 {
+}
+.head-cont-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.head-descr-span {
+  font-family: Montserrat;
+  font-weight: 800;
+  color: #e9e4e2;
+  font-size: 2rem;
+  display: block;
+}
+.header-img {
+  flex: 3 0 40%;
+  transform: translateY(32%);
+  align-items: flex-end;
+  display: flex;
+}
+
+.header-img > img {
+  width: auto;
+  height: 890px;
+  flex-shrink: 0;
+}
+
+.head-container {
+  align-self: center;
+  flex: 20;
+  margin: 5% 0;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "label label label and"
+    "label label label and"
+    "name name name name"
+    "descr descr descr descr";
+}
+
+.head-logo {
+  height: 215px;
+  grid-area: label;
+  justify-self: end;
+}
+
+.head-logo > img {
+  height: 100%;
+}
+
+.head-and {
+  font-size: 17rem;
+  justify-self: start;
+  /* align-items: end; */
+  color: #181617;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  grid-area: and;
+}
+.head-name {
+  color: #181617;
+  align-self: center;
+  justify-self: center;
+  grid-area: name;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.head-name > h1 {
+  letter-spacing: 0.7rem;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat;
+  font-size: 2.2rem;
+}
+.head-descr {
+  grid-area: descr;
+  color: #e9e4e2;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  width: 300%;
+  /* justify-self: center; */
+}
+
+.head-descr > p > span {
+  font-size: 1.6rem;
+}
+
+/* grid-area: footer; */

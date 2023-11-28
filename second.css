@@ -1,0 +1,15 @@
+.joke {
+  color: #181617;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 150%; /* 36px */
+  letter-spacing: 1.2px;
+}
+
+.abc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

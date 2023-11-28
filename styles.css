@@ -1,0 +1,226 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+.warning {
+  display: none;
+  position: sticky;
+  background-color: #f44336;
+  padding: 5% 10%;
+  top: 0;
+}
+
+.warning > span {
+  color: #e9e4e2;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .warning {
+    display: block;
+  }
+  .header-img {
+    flex: 1 0 70%;
+    transform: none;
+    align-items: flex-start;
+  }
+  .head-container {
+    flex: 1 0 30%;
+    margin: 0;
+    height: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-img > img {
+    max-width: 220%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #181617;
+  color: #e9e4e2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 15vh;
+  z-index: 1000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ul-contact {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  display: flex;
+  font-size: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li-contact {
+}
+
+.div-contact {
+}
+
+.contact-name {
+  text-transform: uppercase;
+  letter-spacing: 9.12px;
+}
+
+.contact-name > a {
+  text-decoration: none;
+  color: #e9e4e2;
+  transition: all 0.5s ease;
+}
+
+.contact-name > a:hover {
+  color: #9e9d9d;
+}
+
+.contact-email {
+}
+
+.contact-email > a {
+  text-decoration: none;
+  color: #e9e4e2;
+  transition: all 0.5s ease;
+}
+
+.contact-email > a:hover {
+  color: #9e9d9d;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.contact-number {
+}
+
+.contact-icons {
+  display: flex;
+  gap: 20%;
+}
+
+.contact-icons > a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons > a:hover > svg {
+  fill: #9e9d9d;
+}
+
+.contact-icons > a > svg {
+  height: 4rem;
+  width: 4rem;
+  fill: #e9e4e2;
+  transition: all 0.5s ease;
+}
+
+section {
+  flex: 1;
+}
