@@ -105,6 +105,7 @@ header {
   font-weight: 800;
   line-height: normal;
   width: 300%;
+  z-index: 100000;
   /* justify-self: center; */
 }
 
