@@ -124,6 +124,12 @@ select {
   }
 }
 
+@media screen and (max-height: 1000px) { 
+  html { 
+    font-size: 12px; 
+  } 
+}
+
 html {
   scroll-behavior: smooth;
 }
